@@ -1,0 +1,12 @@
+mysql> insert into ORDERS values (5, 103, 502);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> SELECT SALES_PERSON_NAME, COUNT(ORDERS.SALESPERSON_ID) AS TOTALOrderQuantity FROM SALES_PERSON join ORDERS on (ORDERS.SALESPERSON_ID = SALES_PERSON.SALES_PERSON_ID) group by ORDERS.SALESPERSON_ID;
++-------------------+--------------------+
+| SALES_PERSON_NAME | TOTALOrderQuantity |
++-------------------+--------------------+
+| Dhiraj            |                  2 |
+| Arun              |                  1 |
++-------------------+--------------------+
+2 rows in set (0.00 sec)
+
