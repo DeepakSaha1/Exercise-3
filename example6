@@ -1,0 +1,10 @@
+mysql> SELECT ORDERS.ORDER_ID, ORDERS.CUS_ID, ORDERS.SALESPERSON_ID, SALES_PERSON.SALES_PERSON_NAME, SALES_PERSON.AGE FROM ORDERS INNER JOIN SALES_PERSON ON ORDERS.SALESPERSON_ID = SALES_PERSON.SALES_PERSON_ID;
++----------+--------+----------------+-------------------+-----+
+| ORDER_ID | CUS_ID | SALESPERSON_ID | SALES_PERSON_NAME | AGE |
++----------+--------+----------------+-------------------+-----+
+|        2 |    101 |            503 | Arun              |  40 |
+|        3 |    102 |            502 | Dhiraj            |  40 |
+|        5 |    103 |            502 | Dhiraj            |  40 |
++----------+--------+----------------+-------------------+-----+
+3 rows in set (0.00 sec)
+
