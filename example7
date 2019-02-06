@@ -1,0 +1,2 @@
+mysql> CREATE INDEX index1 ON CUSTOMERS (CUS_NAME);
+Query OK, 0 rows affected (0.41 sec)
