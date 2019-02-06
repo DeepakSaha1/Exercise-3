@@ -1,0 +1,9 @@
+mysql> select ORDER_ID, SALES_PERSON_NAME, CUS_NAME FROM ORDERS O INNER JOIN SALES_PERSON S ON O.SALESPERSON_ID = S.SALES_PERSON_ID INNER JOIN CUSTOMERS C ON O.CUS_ID = C.CUS_ID;
++----------+-------------------+----------+
+| ORDER_ID | SALES_PERSON_NAME | CUS_NAME |
++----------+-------------------+----------+
+|        2 | Arun              | Ashu     |
+|        3 | Dhiraj            | Ashu     |
++----------+-------------------+----------+
+2 rows in set (0.00 sec)
+
