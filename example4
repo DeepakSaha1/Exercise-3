@@ -1,0 +1,46 @@
+mysql> insert into CUSTOMERS values (100, 'Deepak', 'Delhi');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into CUSTOMERS values (101,'Ashu', 'Goa');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into CUSTOMERS values (102,'Ashu', 'Goa');
+Query OK, 1 row affected (0.09 sec)
+
+
+mysql> insert into SALES_PERSON values(501,'Akash', 24);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into SALES_PERSON values(502,'Dhiraj', 40);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into SALES_PERSON values(503,'Arun', 40);
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into ORDERS values (2, 101, 503);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> select * from ORDERS;
++----------+--------+----------------+
+| ORDER_ID | CUS_ID | SALESPERSON_ID |
++----------+--------+----------------+
+|        1 |    101 |            500 |
+|        2 |    101 |            503 |
++----------+--------+----------------+
+2 rows in set (0.00 sec)
+
+mysql> insert into ORDERS values (3, 102, 502);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> select * from ORDERS;
++----------+--------+----------------+
+| ORDER_ID | CUS_ID | SALESPERSON_ID |
++----------+--------+----------------+
+|        1 |    101 |            500 |
+|        2 |    101 |            503 |
+|        3 |    102 |            502 |
++----------+--------+----------------+
+3 rows in set (0.00 sec)
+
+
+
